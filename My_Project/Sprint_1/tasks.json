@@ -1,0 +1,11 @@
+[
+  {
+    "task_id": "Task_1",
+    "description": "Placeholder Task 1",
+    "status": "Todo",
+    "type": "Coding", // Example: Coding, Testing, Documentation, Deployment, Data Generation, Workflow
+    "dependencies": [],
+    "assignee": "AI Agent",
+    "md_file": "Tasks/Task_1.md"
+  }
+]
