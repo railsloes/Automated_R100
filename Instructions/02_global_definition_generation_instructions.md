@@ -13,7 +13,7 @@
 
 **Steps:**
 1.  **Read PRD:** Analyze the requirements outlined in `project_prd.md`.
-2.  **Consult System Memory:** Refer to `../System_Memory_Bank` files for standard patterns and guidelines on defining ontologies, automation entities, state management, and DoD checklists.
+2.  **Consult System Memory:** Refer to `../System_Memory_Bank/project_definition.md` files for standard patterns and guidelines on defining ontologies, automation entities, state management, and DoD checklists.
 3.  **Define Ontology:** Based on the PRD and guidelines, identify and define key project concepts, entities, and their relationships. Write this to `project_ontology.md`.
 4.  **Define Automation Entities:** Identify potential Teams, Tools, Containers, and Events needed to fulfill the requirements. Create high-level summaries (I/O/D) in `automation_entities_summary.md` and detailed specifications in `automation_entities.md`.
 5.  **Define State Management:** Based on the defined entities and ontology, establish rules for state variable handling. Write these to `state_manager_instructions.md`.

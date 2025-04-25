@@ -2,6 +2,7 @@
   {
     "sprint_id": "Sprint_1",
     "status": "Planned",
-    "directory": "Sprint_1/"
+    "directory": "Sprint_1/",
+    "description": "TODO: Add brief sprint goal description here"
   }
 ]
