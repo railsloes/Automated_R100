@@ -1,6 +1,6 @@
 # Instructions: Global Project Definition Generation
 
-**Note:** Assumes Current Working Directory (CWD) is the specific project root (e.g., `/Users/federicolopez/Automated_R100/My_Project1/`). Paths are relative to this CWD.
+**Note:** Assumes Current Working Directory (CWD) is the specific project root (e.g., `/Users/federicolopez/Automated_R100/{PROJECT_NAME}/`). Paths are relative to this CWD.
 
 **Goal:** Generate the core definition files for the project based on the PRD.
 
@@ -28,4 +28,4 @@
 - `definition_of_done_checklist.md` created/updated.
 - `activeContext.md` updated.
 
-**Next Workflow:** Project Planning (Sprint Generation)
+**Next Workflow:**  03_global_definition_generation_instructions.md

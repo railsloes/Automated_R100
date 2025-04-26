@@ -1,6 +1,6 @@
 # Instructions: Project Planning (Sprint Generation)
 
-**Note:** Assumes Current Working Directory (CWD) is the specific project root (e.g., `/Users/federicolopez/Automated_R100/My_Project1/`). Paths are relative to this CWD.
+**Note:** Assumes Current Working Directory (CWD) is the specific project root (e.g., `/Users/federicolopez/Automated_R100/{PROJECT_NAME}/`). Paths are relative to this CWD.
 
 **Goal:** Break down the project into logical Sprints and generate the plan.
 
@@ -20,13 +20,13 @@
 2.  **Identify Reusables (Optional):** Check for existing Teams/Tools that can be reused, based on descriptions in `automation_entities.md` and external information/developer guidance.
 3.  **Determine Sprint Structure:** Group the automation entities into logical Sprints based on dependencies and project goals. Consider reusable components when planning.
 4.  **Generate Sprint Plan:** Create the overall sprint list and their initial status. Write this to `sprints.json`.
-5.  **Generate Sprint Descriptions:** For each planned sprint (at least the first one), create the corresponding directory (e.g., `Sprint_1/`) and write a `sprint_description.md` file outlining the sprint's goals, scope, requirements, and specific DoD items.
+5.  **Generate Sprint Descriptions:** For each planned sprint (at least the first one), create the corresponding directory (e.g., `Sprint_{SPRINT_NUMBER}/`) and write a `sprint_description.md` file outlining the sprint's goals, scope, requirements, and specific DoD items.
 6.  **Update Context:** Update `activeContext.md` to reflect the completion of planning and indicate that Task Generation for Sprint 1 is the next step.
 
 **Output:**
 - `sprints.json` created/updated.
-- `Sprint_N/sprint_description.md` created for each planned sprint (at least Sprint 1).
-- Sprint directories (`Sprint_N/`) created.
+- `Sprint_{SPRINT_NUMBER}/sprint_description.md` created for each planned sprint (at least Sprint 1).
+- Sprint directories (`Sprint_{SPRINT_NUMBER}/`) created.
 - `activeContext.md` updated.
 
 **Next Workflow:** NEXT Sprint Tasks Generation

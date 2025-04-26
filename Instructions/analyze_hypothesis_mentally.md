@@ -82,7 +82,7 @@
 
 ---
 
-**Sample Output Update (in `task_1_hypothesis_1.md`):**
+**Sample Output Update (in `task_{TASK_NUMBER}_hypothesis_1.md`):**
 
 ```diff
  # Hypothesis Detail: Hypothesis_1

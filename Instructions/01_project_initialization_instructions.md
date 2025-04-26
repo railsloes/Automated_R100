@@ -1,6 +1,6 @@
 # Instructions: Project Initialization & PRD Creation
 
-**Note:** Assumes Current Working Directory (CWD) is the specific project root (e.g., `/Users/federicolopez/Automated_R100/My_Project1/`). Paths are relative to this CWD.
+**Note:** Assumes Current Working Directory (CWD) is the specific project root (e.g., `/Users/federicolopez/Automated_R100/{PROJECT_NAME}/`). Paths are relative to this CWD.
 
 **Goal:** Initiate a new project and create the initial Project Requirements Document (PRD).
 

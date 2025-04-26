@@ -1,6 +1,6 @@
 **Rule:** Generate Task Context Summary
 
-**Goal:** To analyze the codebase relevant to a specific task  from the current sprint's task (e.g. task_1.md) and generate a markdown file, `task_{TASK_NUMBER}_context.md`, containing summaries, key information, and a narrative overview to aid understanding.
+**Goal:** To analyze the codebase relevant to a specific task  from the current sprint's task (e.g. task_{TASK_NUMBER}.md) and generate a markdown file, `task_{TASK_NUMBER}_context.md`, containing summaries, key information, and a narrative overview to aid understanding.
 
 **Inputs:**
 
@@ -97,5 +97,4 @@
 
 **Completion:** The file `task_{TASK_NUMBER}_context.md` now contains the contextual summary documentation.
 
-**Next Action:**  Execute `generate_task_function_dependencies.md`
-
+**Next Action:**  Execute `generate_task_function_dependencies.md` for Sprint_{SPRINT_NUMBER}

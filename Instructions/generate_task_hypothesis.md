@@ -13,7 +13,7 @@
 
 **Outputs:**
 
-1.  `task_{TASK_NUMBER}_hypothesis_{HYPOTHESIS_NUMBER}.md`: A new markdown file (where {HYPOTHESIS_NUMBER} is the next sequential hypothesis number for this task, e.g., `task_1_hypothesis_1.md`, `task_1_hypothesis_2.md`) detailing the top-ranked, newly generated hypothesis in a structured format.
+1.  `task_{TASK_NUMBER}_hypothesis_{HYPOTHESIS_NUMBER}.md`: A new markdown file (where {HYPOTHESIS_NUMBER} is the next sequential hypothesis number for this task, e.g., `task_{TASK_NUMBER}_hypothesis_1.md`, `task_{TASK_NUMBER}_hypothesis_2.md`) detailing the top-ranked, newly generated hypothesis in a structured format.
 2.  `task_{TASK_NUMBER}_hypothesis.json`: Updated JSON file with the new hypothesis added (marked with `status: "pending"`).
 
 **Execution Steps:**
@@ -79,7 +79,7 @@
     * Example: "Logs should show `function_a` receiving `input_data` as None, and subsequently `method_b` returning `False`."
 
     **8. Suggested Test Case(s) (Optional):**
-    [Suggest specific existing test cases (e.g., pytest `test_file.py::test_name`) or describe a new test scenario that could trigger the condition and verify the hypothesis.]
+    [Suggest specific existing test cases (e.g., pytest `test_{TEST_NUMBER}`) or describe a new test scenario that could trigger the condition and verify the hypothesis.]
     * Example: `tests/test_module.py::test_function_a_with_null_input`
     ```
 
@@ -97,3 +97,47 @@
     * Write the updated list back to `task_{TASK_NUMBER}_hypothesis.json`.
 
 **Completion:** The file `task_{TASK_NUMBER}_hypothesis_{HYPOTHESIS_NUMBER}.md` is created with the details of the top hypothesis, and `task_{TASK_NUMBER}_hypothesis.json` is updated.
+
+---
+
+**Sample Output Content (`task_{TASK_NUMBER}_hypothesis_1.md` - Initial Generation):**
+
+```markdown
+# Hypothesis Detail: Hypothesis_1
+
+**1. Hypothesis ID:**
+Hypothesis_1
+
+**2. Source Task:**
+task_{TASK_NUMBER}.md (Refactor auth flow to JWT)
+
+**3. Hypothesis Statement:**
+The primary modification needed for the `/login` endpoint in `src/routes/auth.py` is to replace the call to `utils.session_manager.create_session` with a call to a new function `utils.jwt_handler.create_access_token`...
+
+**4. Rationale:**
+Based on the goal to move away from sessions and the dependency analysis showing `routes.auth.login_user` calling `session_manager.create_session`...
+
+**5. Key Code Locations/Variables:**
+*   File: `src/routes/auth.py`
+*   Function: `login_user`
+*   Call to replace: `utils.session_manager.create_session(...)`
+*   Call to add: `utils.jwt_handler.create_access_token(user_id=...)`
+
+**6. Expected Outcome (If True):**
+Modifying the `/login` endpoint as described will allow a user to receive a JWT upon successful login...
+
+**7. Potential Side Effects:**
+*   Existing session-based checks will fail.
+*   Requires creation of `utils.jwt_handler.py`.
+
+**8. Verification Strategy (Mental/Code):**
+*   **Mental:** Trace the `/login` flow...
+*   **Code:** Implement change and write test for `/login` (e.g., `test_{TEST_NUMBER}` in `tests/test_auth.py`)...
+
+**--- Analysis Sections (To be filled by later steps) ---**
+
+**9. Mental Analysis Result:**
+*   **Status:** Pending
+
+**10. Code Analysis Result:**
+*   **Status:** Pending
