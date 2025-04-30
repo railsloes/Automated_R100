@@ -9,10 +9,12 @@
 ## Requirements Reference
 * **TODO:** Link to relevant sections in `../../project_prd.md` or `../../automation_entities.md`.*
 
-## Input/Output/Dependencies (I/O/D)
+## Input/Output/Descriptions (I/O/D)
 * **Input:** *TODO*
 * **Output:** *TODO*
-* **Dependencies:** *TODO*
+* **Description:** *TODO*
+* **Internal Tools:** *TODO*
+
 
 ## Steps
 1.  **TODO:** Break down the task into actionable steps.

@@ -11,6 +11,8 @@
 - `automation_entities.md` (for entities scheduled in Sprint {SPRINT_NUMBER})
 - `project_ontology.md`
 - Relevant files from `System_Memory_Bank/` (e.g., `Teams.md`, `Tools.md`, `Containers.md`, `Events.md`, `testing_definition.md`, `deployment_pattern.md`)
+- `activeContext.md` (for context of current state)
+- 
 
 **Common Outputs (for Sprint {SPRINT_NUMBER}):**
 - Entries added to `Sprint_{SPRINT_NUMBER}/tasks.json` (status 'Todo', type specified).
